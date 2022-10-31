@@ -4,7 +4,7 @@
 
 body {
     background-color: #e5e5e5;
-    width: 375px;
+    width: 100%;
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
@@ -64,3 +64,31 @@ body {
     font-weight: 700;
 }
 
+.area-geral{
+    width: 100%;
+    max-height: 70%;
+    padding-bottom: 86px;
+}
+
+.msgnormal{
+    background-color: #FFFFFF;
+}
+
+.msgstatus{
+    background-color: #DCDCDC;
+}
+
+.msgprivada{
+    background-color: #FFDEDE;
+}
+
+.msg{
+    width: 100%;
+    border-radius: 2px;
+    padding-left: 8px;
+    padding-right: 9px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
