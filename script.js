@@ -75,3 +75,21 @@ function tratarErroMSG(erro) {
      alert("Deu esse erro aqui ó:" + erro);
 }
 
+function enviarMSG(){
+    let textoDigitado = document.querySelector(".msg-para-enviar");
+    let aux = textoDigitado.value;
+    let MSGenviada = {
+        from: nick.name,
+	    to: "Todos",
+	    text: aux,
+	    type: "message" // ou "private_message" para o bônus
+    }
+        let msgpenviar = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', MSGenviada);
+        msgpenviar.catch(reloader);
+        msgpenviar.then(promessas);
+        textoDigitado.value = "";
+} 
+
+function reloader(){
+    window.location.reload();
+}
